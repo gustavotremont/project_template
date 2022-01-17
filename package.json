@@ -2,10 +2,11 @@
   "name": "project_template",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -19,8 +20,10 @@
   "homepage": "https://github.com/gustavotremont/project_template#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "morgan": "^1.10.0",
-    "node-fetch": "^2.6.6",
-    "pug": "^3.0.2"
+    "helmet": "^5.0.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "dotenv": "^14.1.0"
   }
 }
